@@ -15,6 +15,8 @@ npm install
 npm start
 ```
 
+
+## 访问程序
 访问程序：http://localhost:8000/
 1. 1-Discovery
     - Load OpenID Provider Configuration
@@ -25,7 +27,8 @@ npm start
     - Send Token Request
     - 在页面最后点击"Copy"按钮复制access token
 
-访问受保护的后端服务
+## 访问受保护的服务
+访问受保护的服务：
 ```bash
 # access token
 export ACCESS_TOKEN=your_access_token
