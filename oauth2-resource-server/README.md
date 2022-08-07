@@ -34,7 +34,7 @@
    - Authentication flow: `Standard flow`
 3. 在在`myrealm`下创建一个User
 
-访问http://localhost:8080/realms/myrealm/.well-known/openid-configuration来获取Keycloak endpoints。
+访问<http://localhost:8080/realms/myrealm/.well-known/openid-configuration>来获取Keycloak endpoints。
 
 其中上面的授权服务器的`issuer-uri`为`http://localhost:8080/realms/myrealm`。
 
@@ -59,13 +59,13 @@ spring:
         opaquetoken:
           client-id: mybackend
           client-secret: CLIENT_SECRET
-          issuer-uri: http://localhost:88080/realms/myrealm
+          issuer-uri: http://localhost:8080/realms/myrealm
           introspection-uri: http://localhost:8080/realms/myrealm/protocol/openid-connect/token/introspect
 ```
 
 ## 应用测试
 
-1. 使用[oidc-playground](../oidc-playground)获取access token
+1. 使用[oidc-playground](../oidc-playground)工具获取access token
 2. 带着access token访问后端服务
 
 访问受保护的后端服务
