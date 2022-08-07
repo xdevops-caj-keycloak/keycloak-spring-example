@@ -46,7 +46,7 @@
 3. 配置验证策略对应找到的算法的有效JWT公钥
 4. 配置验证策略以验证公钥颁发者
 
-## 资源服务器运行时
+## 资源服务器应用程序运行时
 资源服务器应用程序运行时处理任何包含`Authorization: Bearer access_token`的请求，并使用JWT公钥对access_token直接验签。
 
 资源服务器应用程序也可以调用授权服务器的introspection端点（令牌内省）进行验签，此时还需要在资源服务器应用程序中配置`client-id`, `client-secret`和`introspection-uri`.
