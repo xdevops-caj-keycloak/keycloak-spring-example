@@ -138,8 +138,9 @@ function refreshTokens() {
 
             // set access token output
             if (response['access_token']) {
-                var idToken = JSON.parse(base64UrlDecode(response['access_token'].split('.')[1]));
-                setOutput('output-accesstokenRefreshed', idToken);
+                var accessToken = JSON.parse(base64UrlDecode(response['access_token'].split('.')[1]));
+                setOutput('output-accesstokenRefreshed', accessToken);
+                setOutput('output-accesstokenRefreshedRaw', response['access_token']);
             } else {
                 setOutput('output-accesstokenRefreshed', '');
             }
