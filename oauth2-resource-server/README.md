@@ -82,7 +82,7 @@ export ACCESS_TOKEN=your_access_token
 # curl
 curl -v -X GET \
  http://localhost:8081 \
- -H "Authorization: Bearer "$ACCESS_TOKEN
+ -H "Authorization: Bearer $ACCESS_TOKEN"
 
 # httpie
 http http://localhost:8081 Authorization:"Bearer $ACCESS_TOKEN"
@@ -101,6 +101,10 @@ WWW-Authenticate: Bearer error="invalid_token", error_description="Bearer token 
 HTTP/1.1 401 Unauthorized
 WWW-Authenticate: Bearer error="invalid_token", error_description="An error occurred while attempting to decode the Jwt: Jwt expired at 2022-08-07T15:50:03Z", error_uri="https://tools.ietf.org/html/rfc6750#section-3.1"
 ```
+
+## 安全上下文
+
+TBD
 
 ## 应用单元测试
 
