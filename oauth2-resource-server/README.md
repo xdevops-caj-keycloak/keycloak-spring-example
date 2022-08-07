@@ -94,9 +94,11 @@ http http://localhost:8081 Authorization:"Bearer $ACCESS_TOKEN"
 异常信息示例：
 ```bash
 # 无效的access token
+HTTP/1.1 401 Unauthorized
 WWW-Authenticate: Bearer error="invalid_token", error_description="Bearer token is malformed", error_uri="https://tools.ietf.org/html/rfc6750#section-3.1"
 
 # access token失效
+HTTP/1.1 401 Unauthorized
 WWW-Authenticate: Bearer error="invalid_token", error_description="An error occurred while attempting to decode the Jwt: Jwt expired at 2022-08-07T15:50:03Z", error_uri="https://tools.ietf.org/html/rfc6750#section-3.1"
 ```
 
