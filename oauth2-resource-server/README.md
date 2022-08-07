@@ -65,10 +65,16 @@ spring:
 
 ## 应用测试
 
-1. 使用[oidc-playground](../oidc-playground)工具获取access token
-2. 带着access token访问后端服务
+运行资源服务器应用程序：
+```bash
+mvn spring-boot:run
+```
 
-访问受保护的后端服务
+测试访问资源服务器的服务：
+1. 使用[oidc-playground](../oidc-playground)工具获取access token
+2. 带着access token访问受保护的服务
+
+访问受保护的服务
 ```bash
 # access token
 export ACCESS_TOKEN=your_access_token
