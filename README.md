@@ -21,7 +21,8 @@
 
 
 参见：
-- [oauth2-resource-server](./oauth2-resource-server)
+- [oauth2-resource-server 直接验签](./oauth2-resource-server)
+- [oauth2-resource-server-using-introspection 调用授权服务器的introspection端点验签](./oauth2-resource-server-using-introspection)
 
 ### Spring OAuth2 Client
 
