@@ -1,6 +1,6 @@
 # Spring OAuth2 Resource Server Using Introspection
 
-本例演示了调用**授权服务器**（比如Keycloak）的introspectation endpoint来验签。
+本例演示了调用**授权服务器**（比如Keycloak）的introspection endpoint来验签。
 本指南只说明差异的部分，其他内容参见[oauth2-resource-server](../oauth2-resource-server)
 
 ## 配置资源服务器应用程序
