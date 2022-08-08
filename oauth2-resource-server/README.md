@@ -18,7 +18,16 @@
 
 在`application.yaml`中指定授权服务器的地址。
 
-最小的配置只需要指定`spring.security.oauth2.resourceserver.jwt.issuer-uri`
+最小的配置只需要指定`spring.security.oauth2.resourceserver.jwt.issuer-uri`。
+
+```yaml
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8080/realms/myrealm
+```
 
 ## 在授权服务器中配置
 
