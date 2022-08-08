@@ -7,8 +7,8 @@
 ## 集成方式
 测试各种Keycloak与Spring的集成方式：
 - Spring提供的集成方式
-    - Spring OAuth2 Client: `spring-boot-starter-oauth2-client`
     - Spring OAuth2 Resource Server: `spring-boot-starter-oauth2-resource-server`
+    - Spring OAuth2 Client: `spring-boot-starter-oauth2-client`
 - Keycloak提供的集成方式
     - Keycloak Spring Boot adapter: `keycloak-spring-boot-starter`
     - Keycloak Spring Security adapter: `keycloak-spring-security-adapter`
