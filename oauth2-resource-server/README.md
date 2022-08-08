@@ -65,7 +65,7 @@ spring:
   security:
     oauth2:
       resourceserver:
-        opaquetoken:
+        opaque-token:
           client-id: mybackend
           client-secret: CLIENT_SECRET
           issuer-uri: http://localhost:8080/realms/myrealm

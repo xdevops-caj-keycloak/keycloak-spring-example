@@ -1,0 +1,11 @@
+server:
+  port: 8081
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        opaque-token:
+          client-id: mybackend
+          client-secret: yLhpPW0G7j8Z3rRdL34YT4QNit4RpeME
+          issuer-uri: http://localhost:8080/realms/myrealm
+          introspection-uri: http://localhost:8080/realms/myrealm/protocol/openid-connect/token/introspect
